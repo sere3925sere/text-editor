@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="RP&lt;*&gt;">
+		<DisplayString Condition="offset!=0">{($T1*)((char*)&amp;offset + offset)}</DisplayString>
+		<DisplayString Condition="offset==0">[null]</DisplayString>
+		<Expand>
+			<Item Name="RP" Condition="offset!=0">($T1*)((char*)&amp;offset + offset)</Item>
+		</Expand>
+	</Type>
+</AutoVisualizer>
